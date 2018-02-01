@@ -1,3 +1,17 @@
+![New Paltz Logo](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
 # ELSpring2018
-This is my (N03024262) class repository. All work here is mine, except otherwise noted.
+This repository documents my class work and projects done for **CPS342**
 
+1. **Personal Information:**
+
+      Name: Sylum Mastropaolo
+      
+      Major: Computer Science
+      
+      ID: [N03024262](https://github.com/N03024262)
+      
+      Year: Senior
+      
+2. **Class Start Date:** January 22, 2018
+
+3. **Class End Date:** May 8, 2018
