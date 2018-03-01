@@ -10,12 +10,23 @@
    {% for pin in pins %}
    <p>The {{ pins[pin].name }}
    {% if pins[pin].state == true %}
-      is currently on (<a href="https://bbnewpaltz.sln.suny.edu/%7B%7Bpin%7D%7D/off">turn off</a>)
+      is currently on (<a href="/{{pin}}/off">turn off</a>)
    {% else %}
-      is currently off (<a href="https://bbnewpaltz.sln.suny.edu/%7B%7Bpin%7D%7D/on">turn on</a>)
+      is currently off (<a href="/{{pin}}/on">turn on</a>)
    {% endif %}
    </p>
    {% endfor %}
+   <p>
+      Switch
+   {% for pin in pins%}
+   {% if pin == 1 %}
+      {{ pins[pin].name }}
+   {% else %}
+      and {{ pins[pin].name }}
+   {% endif %}
+   {% endfor %}
+   (<a href="/switch">switch all</a>)
+   </p>
 
    {% if message %}
    <h2>{{ message }}</h2>

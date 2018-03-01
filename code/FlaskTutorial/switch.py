@@ -60,5 +60,18 @@ def action(changePin, action):
 
    return render_template('ledonoff.html', **templateData)
 
+@app.route("/switch")
+def swap():
+    for pin in pins:
+        GPIO.output(pin, not GPIO.input(pin))
+    message = "Toggled all pins"
+    
+    templateData = {
+        'message' : message,
+        'pins' : pins
+    }
+    
+    return render_template('ledonoff.html', **templateData)
+
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
